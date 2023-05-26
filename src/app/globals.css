@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.gradient-bg {
+  background: linear-gradient(
+    174.42deg,
+    rgba(3, 26, 86, 0.89) -15.71%,
+    rgba(76, 184, 132, 0.81) 95.45%
+  );
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #e6ebed;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    174.42deg,
+    rgba(3, 26, 86, 0.89) -15.71%,
+    rgba(76, 184, 132, 0.81) 95.45%
+  );
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+}
+
+.react-calendar__tile {
+  color: black !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: black !important;
+}
+
+.react-calendar__navigation__label {
+  color: black !important;
+}
+
+.react-calendar__navigation {
+  color: black !important;
 }
