@@ -8,10 +8,6 @@ import Help from '@/components/hero/help'
 import LandingContainer from '@/components/landing-container'
 import NavigationBar from '@/components/nav-bar'
 
-export const metadata = {
-  title: 'Snapscout',
-}
-
 export default function Landing() {
   return (
     <LandingContainer>
